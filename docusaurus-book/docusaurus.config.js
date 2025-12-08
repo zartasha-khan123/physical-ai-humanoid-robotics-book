@@ -48,7 +48,7 @@ module.exports = {
           path: 'docs',
           routeBasePath: '/', // serve docs at root
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/YourOrg/physical-ai-book/edit/main/',
+          editUrl: 'https://github.com/zartasha-khan123/physical-ai-humanoid-robotics-book/edit/main/docs/',
            include: ['**/*.md'], // ensure all md files are included
           includeCurrentVersion: true,
         },
