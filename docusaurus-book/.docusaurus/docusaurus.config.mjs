@@ -7,7 +7,7 @@ export default {
   "title": "Physical AI & Humanoid Robotics",
   "tagline": "AI Systems in the Physical World",
   "url": "https://zartasha-khan123.github.io",
-  "baseUrl": "/",
+  "baseUrl": "/physical-ai-humanoid-robotics-book/",
   "onBrokenLinks": "throw",
   "favicon": "img/favicon.ico",
   "organizationName": "zartasha-khan123",
