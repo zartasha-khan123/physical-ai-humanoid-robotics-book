@@ -6,12 +6,12 @@
 export default {
   "title": "Physical AI & Humanoid Robotics",
   "tagline": "AI Systems in the Physical World",
-  "url": "http://localhost:3000",
+  "url": "https://zartasha-khan123.github.io",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "favicon": "img/favicon.ico",
-  "organizationName": "YourOrg",
-  "projectName": "physical-ai-book",
+  "organizationName": "zartasha-khan123",
+  "projectName": "physical-ai-humanoid-robotics-book",
   "presets": [
     [
       "@docusaurus/preset-classic",
@@ -20,11 +20,10 @@ export default {
           "path": "docs",
           "routeBasePath": "/",
           "sidebarPath": "C:\\Users\\Microsoft\\Desktop\\specifyplus\\sp-project\\docusaurus-book\\sidebars.js",
-          "editUrl": "https://github.com/YourOrg/physical-ai-book/edit/main/",
+          "editUrl": "https://github.com/zartasha-khan123/physical-ai-humanoid-robotics-book/edit/main/docs/",
           "include": [
             "**/*.md"
-          ],
-          "includeCurrentVersion": true
+          ]
         },
         "blog": false,
         "theme": {
