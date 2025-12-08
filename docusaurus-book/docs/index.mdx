@@ -5,6 +5,7 @@ slug: /
 ---
 
 import Link from '@docusaurus/Link';
+import React from 'react';
 
 <div style={{
   padding: '4rem 2rem',
@@ -27,7 +28,7 @@ import Link from '@docusaurus/Link';
     <Link
       className="button button--primary button--lg"
       style={{ background: '#ff7f50', borderRadius: '8px' }}
-      to="/module1/introduction"
+      to="/M1-ROS2/Intro-to-ROS2"
     >
       🚀 Start Reading
     </Link>
@@ -62,49 +63,48 @@ This book is structured for beginners, intermediate learners, and advanced robot
   marginTop: '2rem'
 }}>
 
-  <div style={{
-    padding: '1.5rem',
-    borderRadius: '12px',
-    background: '#f0f4ff',
-    boxShadow:'0 4px 10px rgba(0,0,0,0.1)'
-  }}>
-    <h3>Module 1 — ROS 2 Foundations</h3>
-    <p>Learn ROS2 nodes, topics, publishers, subscribers, and robotics communication.</p>
-    <Link to="/module1/introduction">Read Module →</Link>
-  </div>
-
-  <div style={{
-    padding: '1.5rem',
-    borderRadius: '12px',
-    background: '#fff7e6',
-    boxShadow:'0 4px 10px rgba(0,0,0,0.1)'
-  }}>
-    <h3>Module 2 — Sensors & Actuators</h3>
-    <p>Understand how robots sense and interact with the physical world.</p>
-    <Link to="/module2/introduction">Read Module →</Link>
-  </div>
-
-  <div style={{
-    padding: '1.5rem',
-    borderRadius: '12px',
-    background: '#e8fff0',
-    boxShadow:'0 4px 10px rgba(0,0,0,0.1)'
-  }}>
-    <h3>Module 3 — Perception Systems</h3>
-    <p>Explore computer vision, LIDAR, depth sensing, and 3D mapping.</p>
-    <Link to="/module3/introduction">Read Module →</Link>
-  </div>
-
-  <div style={{
-    padding: '1.5rem',
-    borderRadius: '12px',
-    background: '#ffe6f2',
-    boxShadow:'0 4px 10px rgba(0,0,0,0.1)'
-  }}>
-    <h3>Module 4 — Humanoid Intelligence</h3>
-    <p>Learn locomotion, balance, gait control, and human-like movement.</p>
-    <Link to="/module4/introduction">Read Module →</Link>
-  </div>
+  {[
+    {
+      title: "Module 1 — ROS 2 Foundations",
+      desc: "Learn ROS2 nodes, topics, publishers, subscribers, and robotics communication.",
+      link: "/M1-ROS2/Intro-to-ROS2",
+      bg: "#474b55ff"
+    },
+    {
+      title: "Module 2 — Sensors & Actuators",
+      desc: "Understand how robots sense and interact with the physical world.",
+      link: "/M2-Digital-Twin/Sim-Sensors",
+      bg: "#887855ff"
+    },
+    {
+      title: "Module 3 — Perception Systems",
+      desc: "Explore computer vision, LIDAR, depth sensing, and 3D mapping.",
+      link: "/M3-Isaac/Isaac-Sim",
+      bg: "#295a3aff"
+    },
+    {
+      title: "Module 4 — Humanoid Intelligence",
+      desc: "Learn locomotion, balance, gait control, and human-like movement.",
+      link: "/M4-VLA/LLM-Cognitive-Planning",
+      bg: "#5c4e55ff"
+    }
+  ].map((m, idx) => (
+    <div key={idx} style={{
+      padding: '1.5rem',
+      borderRadius: '12px',
+      background: m.bg,
+      color: '#000',
+      boxShadow:'0 4px 10px rgba(0,0,0,0.1)',
+      transition: 'transform 0.2s, box-shadow 0.2s'
+    }}
+    onMouseOver={e => { e.currentTarget.style.transform='translateY(-5px)'; e.currentTarget.style.boxShadow='0 10px 20px rgba(0,0,0,0.2)'; }}
+    onMouseOut={e => { e.currentTarget.style.transform='translateY(0)'; e.currentTarget.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)'; }}
+    >
+      <h3>{m.title}</h3>
+      <p>{m.desc}</p>
+      <Link to={m.link}>Read Module →</Link>
+    </div>
+  ))}
 
 </div>
 
@@ -124,4 +124,3 @@ Whether you're building a small robot or a full humanoid, this book will guide y
 # 🎯 Ready to Begin?
 
 👉 Use the sidebar or click **Start Reading** to begin your robotics journey.
-

@@ -57,7 +57,7 @@ module.exports = {
           // 🔥 FIXED EDIT URL
           // It will correctly open file editor for every page
           editUrl:
-            'https://github.com/zartasha-khan123/physical-ai-humanoid-robotics-book/edit/main/',
+            'https://github.com/zartasha-khan123/physical-ai-humanoid-robotics-book/edit/main/docs',
 
           include: ['**/*.md','**/*.mdx'],
         },
