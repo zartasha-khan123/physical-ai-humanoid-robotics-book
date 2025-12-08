@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+
+# Build folders
+.docusaurus/
+build/
+
+# Logs
+*.log
+*.tmp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Optional unwanted files
+*.bak
