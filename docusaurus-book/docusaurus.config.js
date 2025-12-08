@@ -59,7 +59,7 @@ module.exports = {
           editUrl:
             'https://github.com/zartasha-khan123/physical-ai-humanoid-robotics-book/edit/main/',
 
-          include: ['**/*.md'],
+          include: ['**/*.md','**/*.mdx'],
         },
 
         blog: false,

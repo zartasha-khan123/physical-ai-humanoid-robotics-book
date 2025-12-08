@@ -1,7 +1,7 @@
 // sidebars.js
 module.exports = {
   tutorialSidebar: [
-    "intro",
+    "index",
     "M1-ROS2/Intro-to-ROS2",
     "M1-ROS2/Nodes-Topics-Services",
     "M1-ROS2/ROS2-Control",
