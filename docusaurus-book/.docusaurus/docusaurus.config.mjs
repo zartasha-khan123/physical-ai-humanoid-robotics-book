@@ -20,7 +20,6 @@ export default {
           "path": "docs",
           "routeBasePath": "/",
           "sidebarPath": "C:\\Users\\Microsoft\\Desktop\\specifyplus\\sp-project\\docusaurus-book\\sidebars.js",
-          "editUrl": "https://github.com/zartasha-khan123/physical-ai-humanoid-robotics-book/edit/main/",
           "include": [
             "**/*.md",
             "**/*.mdx"
