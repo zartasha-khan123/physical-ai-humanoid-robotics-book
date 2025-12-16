@@ -1,8 +1,7 @@
-
 // module.exports = {
 //   title: 'Physical AI & Humanoid Robotics',
 //   tagline: 'AI Systems in the Physical World',
-//   url: 'https://zartasha-khan123.github.io',
+//   url: 'https://physical-ai-book-jeyfjswje-zartash-imrans-projects.vercel.app',
 //   baseUrl: '/',
 //   onBrokenLinks: 'throw',
 //   onBrokenMarkdownLinks: 'warn',
@@ -21,13 +20,8 @@
 //           sidebarPath: require.resolve('./sidebars.js'),
 //           include: ['**/*.md', '**/*.mdx'],
 
-//           // FIXED EDIT URL
-//           editUrl: ({ versionDocsDirPath, docPath }) => {
-//             // Homepage fix
-//             if (docPath === 'index') {
-//               return 'https://github.com/zartasha-khan123/physical-ai-humanoid-robotics-book/edit/main/docs/index.mdx';
-//             }
-//             return `https://github.com/zartasha-khan123/physical-ai-humanoid-robotics-book/edit/main/docs/${docPath}`;
+//           editUrl: ({ docPath }) => {
+//             return `https://github.com/zartasha-khan123/physical-ai-humanoid-robotics-book/edit/main/docusaurus-book/docs/${docPath}`;
 //           },
 //         },
 
@@ -45,8 +39,10 @@
 module.exports = {
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'AI Systems in the Physical World',
-  url: 'https://zartasha-khan123.github.io',
+
+  url: 'https://physical-ai-book-jeyfjswje-zartash-imrans-projects.vercel.app',
   baseUrl: '/',
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -60,21 +56,25 @@ module.exports = {
       {
         docs: {
           path: 'docs',
-          routeBasePath: '/', 
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           include: ['**/*.md', '**/*.mdx'],
-
-          editUrl: ({ docPath }) => {
-            return `https://github.com/zartasha-khan123/physical-ai-humanoid-robotics-book/edit/main/docusaurus-book/docs/${docPath}`;
-          },
+          editUrl:
+            'https://github.com/zartasha-khan123/physical-ai-humanoid-robotics-book/edit/main/docusaurus-book/docs/',
         },
-
         blog: false,
-
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
   ],
+
+  themeConfig: {
+    sitemap: {
+      changefreq: 'weekly',
+      priority: 0.5,
+      filename: 'sitemap.xml',
+    },
+  },
 };
