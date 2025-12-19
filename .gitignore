@@ -18,6 +18,7 @@ Thumbs.db
 # Python cache
 __pycache__/
 *.pyc
+.env
 
 # VSCode / system files
 .vscode/
