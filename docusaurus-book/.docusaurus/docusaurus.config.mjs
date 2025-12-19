@@ -6,8 +6,8 @@
 export default {
   "title": "Physical AI & Humanoid Robotics",
   "tagline": "AI Systems in the Physical World",
-  "url": "https://zartasha-khan123.github.io",
-  "baseUrl": "/physical-ai-humanoid-robotics-book/",
+  "url": "https://physical-ai-book-jeyfjswje-zartash-imrans-projects.vercel.app",
+  "baseUrl": "/",
   "onBrokenLinks": "throw",
   "favicon": "img/favicon.ico",
   "organizationName": "zartasha-khan123",
@@ -23,7 +23,8 @@ export default {
           "include": [
             "**/*.md",
             "**/*.mdx"
-          ]
+          ],
+          "editUrl": "https://github.com/zartasha-khan123/physical-ai-humanoid-robotics-book/edit/main/docusaurus-book/docs/"
         },
         "blog": false,
         "theme": {
@@ -32,45 +33,12 @@ export default {
       }
     ]
   ],
-  "baseUrlIssueBanner": true,
-  "i18n": {
-    "defaultLocale": "en",
-    "path": "i18n",
-    "locales": [
-      "en"
-    ],
-    "localeConfigs": {}
-  },
-  "future": {
-    "v4": {
-      "removeLegacyPostBuildHeadAttribute": false,
-      "useCssCascadeLayers": false
-    },
-    "experimental_faster": {
-      "swcJsLoader": false,
-      "swcJsMinimizer": false,
-      "swcHtmlMinimizer": false,
-      "lightningCssMinimizer": false,
-      "mdxCrossCompilerCache": false,
-      "rspackBundler": false,
-      "rspackPersistentCache": false,
-      "ssgWorkerThreads": false
-    },
-    "experimental_storage": {
-      "type": "localStorage",
-      "namespace": false
-    },
-    "experimental_router": "browser"
-  },
-  "onBrokenAnchors": "warn",
-  "onDuplicateRoutes": "warn",
-  "staticDirectories": [
-    "static"
-  ],
-  "customFields": {},
-  "plugins": [],
-  "themes": [],
   "themeConfig": {
+    "sitemap": {
+      "changefreq": "weekly",
+      "priority": 0.5,
+      "filename": "sitemap.xml"
+    },
     "colorMode": {
       "defaultMode": "light",
       "disableSwitch": false,
@@ -240,6 +208,44 @@ export default {
       "maxHeadingLevel": 3
     }
   },
+  "baseUrlIssueBanner": true,
+  "i18n": {
+    "defaultLocale": "en",
+    "path": "i18n",
+    "locales": [
+      "en"
+    ],
+    "localeConfigs": {}
+  },
+  "future": {
+    "v4": {
+      "removeLegacyPostBuildHeadAttribute": false,
+      "useCssCascadeLayers": false
+    },
+    "experimental_faster": {
+      "swcJsLoader": false,
+      "swcJsMinimizer": false,
+      "swcHtmlMinimizer": false,
+      "lightningCssMinimizer": false,
+      "mdxCrossCompilerCache": false,
+      "rspackBundler": false,
+      "rspackPersistentCache": false,
+      "ssgWorkerThreads": false
+    },
+    "experimental_storage": {
+      "type": "localStorage",
+      "namespace": false
+    },
+    "experimental_router": "browser"
+  },
+  "onBrokenAnchors": "warn",
+  "onDuplicateRoutes": "warn",
+  "staticDirectories": [
+    "static"
+  ],
+  "customFields": {},
+  "plugins": [],
+  "themes": [],
   "scripts": [],
   "headTags": [],
   "stylesheets": [],
