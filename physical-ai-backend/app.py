@@ -32,14 +32,12 @@
 
 
 import gradio as gr
-from backend.api import retriever  # async function
-
+from backend.api import retriever
 import asyncio
 
 def generate(query):
     if not query.strip():
         return "Please enter a query."
-    # Directly call async retriever
     return asyncio.run(retriever.retrieve(query))
 
 gradio_app = gr.Interface(
@@ -49,9 +47,5 @@ gradio_app = gr.Interface(
     title="Physical AI Backend"
 )
 
-gr.Interface(
-    fn=generate,
-    inputs=gr.Textbox(label="Ask something"),
-    outputs=gr.Textbox(label="Answer"),
-    title="Physical AI Backend"
-).launch(server_name="0.0.0.0", server_port=7860)
+# HF Space requires this:
+gradio_app.launch(server_name="0.0.0.0", server_port=7860, share=False)
