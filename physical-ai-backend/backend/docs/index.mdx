@@ -1,0 +1,126 @@
+---
+title: Physical AI & Humanoid Robotics
+description: A complete guide to building Physical AI, autonomous systems, and humanoid robots.
+slug: /
+---
+
+import Link from '@docusaurus/Link';
+import React from 'react';
+
+<div style={{
+  padding: '4rem 2rem',
+  textAlign: 'center',
+  background: 'linear-gradient(135deg, #0a2540, #073763, #051b3b)',
+  color: 'white',
+  borderRadius: '12px',
+  boxShadow: '0 8px 20px rgba(0,0,0,0.3)'
+}}>
+  <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>
+    🤖 Physical AI & Humanoid Robotics
+  </h1>
+  <p style={{ maxWidth: '600px', margin: '0 auto', fontSize: '1.2rem' }}>
+    A complete guide to building next-generation intelligent humanoid systems —
+    from ROS2 foundations to motion planning, perception, AI control,
+    and full Physical AI architecture.
+  </p>
+
+  <div style={{ marginTop: '2rem' }}>
+    <Link
+      className="button button--primary button--lg"
+      style={{ background: '#ff7f50', borderRadius: '8px' }}
+      to="/M1-ROS2/Intro-to-ROS2"
+    >
+      🚀 Start Reading
+    </Link>
+  </div>
+</div>
+
+---
+
+# 📘 What You Will Learn
+
+Explore the complete journey of **Physical AI + Humanoid Robotics**:
+
+- 🧠 Foundations of Physical AI  
+- 🦾 Sensors, Actuators & Mechatronics  
+- 🕹️ ROS2 Architecture & Nodes  
+- 🧭 Motion Planning & Navigation  
+- 🖐️ Manipulation & Grasping  
+- 👁️ Robot Perception  
+- 🤖 Humanoid Intelligence  
+- 🎮 AI-Based Control Systems  
+
+This book is structured for beginners, intermediate learners, and advanced robotics engineers.
+
+---
+
+# 📂 Modules Overview
+
+<div style={{
+  display: 'grid',
+  gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+  gap: '1.5rem',
+  marginTop: '2rem'
+}}>
+
+  {[
+    {
+      title: "Module 1 — ROS 2 Foundations",
+      desc: "Learn ROS2 nodes, topics, publishers, subscribers, and robotics communication.",
+      link: "/M1-ROS2/Intro-to-ROS2",
+      bg: "#474b55ff"
+    },
+    {
+      title: "Module 2 — Sensors & Actuators",
+      desc: "Understand how robots sense and interact with the physical world.",
+      link: "/M2-Digital-Twin/Sim-Sensors",
+      bg: "#887855ff"
+    },
+    {
+      title: "Module 3 — Perception Systems",
+      desc: "Explore computer vision, LIDAR, depth sensing, and 3D mapping.",
+      link: "/M3-Isaac/Isaac-Sim",
+      bg: "#295a3aff"
+    },
+    {
+      title: "Module 4 — Humanoid Intelligence",
+      desc: "Learn locomotion, balance, gait control, and human-like movement.",
+      link: "/M4-VLA/LLM-Cognitive-Planning",
+      bg: "#5c4e55ff"
+    }
+  ].map((m, idx) => (
+    <div key={idx} style={{
+      padding: '1.5rem',
+      borderRadius: '12px',
+      background: m.bg,
+      color: '#000',
+      boxShadow:'0 4px 10px rgba(0,0,0,0.1)',
+      transition: 'transform 0.2s, box-shadow 0.2s'
+    }}
+    onMouseOver={e => { e.currentTarget.style.transform='translateY(-5px)'; e.currentTarget.style.boxShadow='0 10px 20px rgba(0,0,0,0.2)'; }}
+    onMouseOut={e => { e.currentTarget.style.transform='translateY(0)'; e.currentTarget.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)'; }}
+    >
+      <h3>{m.title}</h3>
+      <p>{m.desc}</p>
+      <Link to={m.link}>Read Module →</Link>
+    </div>
+  ))}
+
+</div>
+
+---
+
+# 🧩 How This Book Works
+
+- 📚 **Clear modules** separated by topics  
+- 🛠️ **Hands-on examples** with ROS2  
+- 🧪 **Experiments and simulations**  
+- 💡 **Real-world humanoid applications**  
+
+Whether you're building a small robot or a full humanoid, this book will guide you from zero to mastery.
+
+---
+
+# 🎯 Ready to Begin?
+
+👉 Use the sidebar or click **Start Reading** to begin your robotics journey.

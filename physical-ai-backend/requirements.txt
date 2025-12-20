@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+gradio
+python-dotenv
+pydantic
+qdrant-client
+openai
+python-multipart
+pandas
