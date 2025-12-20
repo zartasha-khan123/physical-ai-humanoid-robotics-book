@@ -49,5 +49,9 @@ gradio_app = gr.Interface(
     title="Physical AI Backend"
 )
 
-# Launch Gradio
-gradio_app.launch()
+gr.Interface(
+    fn=generate,
+    inputs=gr.Textbox(label="Ask something"),
+    outputs=gr.Textbox(label="Answer"),
+    title="Physical AI Backend"
+).launch(server_name="0.0.0.0", server_port=7860)
