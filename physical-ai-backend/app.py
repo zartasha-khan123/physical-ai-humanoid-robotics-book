@@ -33,12 +33,12 @@
 
 import gradio as gr
 import asyncio
-from backend.retriving import retrieve
+from backend.api import retriever   # 👈 NOT retriving
 
 def generate(query):
     if not query.strip():
         return "Please enter a query."
-    return asyncio.run(retrieve(query))
+    return asyncio.run(retriever.retrieve(query))
 
 demo = gr.Interface(
     fn=generate,
