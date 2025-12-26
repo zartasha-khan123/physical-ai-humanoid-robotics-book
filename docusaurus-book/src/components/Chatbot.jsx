@@ -4,13 +4,7 @@ import './Chatbot.css';
 
 // For local development, point this to your FastAPI backend.
 // For production on Vercel, use relative path like '/api/query' if rewrites are set.
-// const API_ENDPOINT =
-//   process.env.NODE_ENV === 'development'
-//     ? 'http://127.0.0.1:8000/query'
-//     : 'https://zartashakhan-physical-ai-backend.hf.space/query';
-
-const API_ENDPOINT = process.env.NEXT_PUBLIC_API_ENDPOINT;
-
+const API_ENDPOINT = 'https://zartashakhan-physical-ai-backend.hf.space/query';
 
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
